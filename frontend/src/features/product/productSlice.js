@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { toast } from "react-hot-toast";
 
-const api = "http://localhost:8082/api/v1/items";
+const api = "https://wafflaro-server.vercel.app/api/v1/items";
 
 export const getAllProducts = createAsyncThunk("product/getAllProducts", async (searchItem) => {
     try {
