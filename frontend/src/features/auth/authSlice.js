@@ -2,11 +2,11 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { toast } from "react-hot-toast";
 
-const api = "https://wafflaro-server.vercel.app/api/v1/user"
+// const api = "https://wafflaro-server.vercel.app/api/v1/user"
 
 export const loginUser = createAsyncThunk('auth/loginUser', async (userData) => {
   try {
-    const response = await axios.post(`${api}/signin`, userData)
+    const response = await axios.post(`/api/v1/user/signin`, userData)
     const responseData = {
       userFound: response.data.userFound,
       token: response.data.token,
@@ -20,7 +20,7 @@ export const loginUser = createAsyncThunk('auth/loginUser', async (userData) => 
 
 export const signupUser = createAsyncThunk('auth/signupUser', async(userData) => {
   try {
-    const response = await axios.post(`${api}/signup`, userData)
+    const response = await axios.post(`/api/v1/user/signup`, userData)
     const responseData = {
       newUser: response.data.newUser,
       token: response.data.token
@@ -34,7 +34,7 @@ export const signupUser = createAsyncThunk('auth/signupUser', async(userData) =>
 export const logoutUser = createAsyncThunk('auth/logoutUser', async()=>{
   try{
     const token = localStorage.getItem('token');
-    const response = await axios.post(`${api}/logout`, null, {
+    const response = await axios.post(`/api/v1/user/logout`, null, {
       headers: {
         Authorization: `Bearer ${token}`
       },
@@ -48,7 +48,7 @@ export const logoutUser = createAsyncThunk('auth/logoutUser', async()=>{
 export const userDetails = createAsyncThunk('auth/userDetails', async() => {
   try{
     const token = localStorage.getItem('token');
-    const response = await axios.get(`${api}/myprofile`, {
+    const response = await axios.get(`/api/v1/user/myprofile`, {
       headers: {
        Authorization: `Bearer ${token}`
       },
@@ -66,7 +66,7 @@ export const userDetails = createAsyncThunk('auth/userDetails', async() => {
 export const editProfile = createAsyncThunk('auth/editProfile', async(updatedData) => {
   try{
     const token = localStorage.getItem('token');
-    const response = await axios.post(`${api}/editprofile`, updatedData, {
+    const response = await axios.post(`/api/v1/user/editprofile`, updatedData, {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -80,7 +80,7 @@ export const editProfile = createAsyncThunk('auth/editProfile', async(updatedDat
 export const changePassword = createAsyncThunk('auth/changePassword', async(newPass) => {
   try{
     const token = localStorage.getItem('token');
-    const response = await axios.post(`${api}/changepassword`, newPass, {
+    const response = await axios.post(`/api/v1/user/changepassword`, newPass, {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -94,7 +94,7 @@ export const changePassword = createAsyncThunk('auth/changePassword', async(newP
 export const deleteAccount = createAsyncThunk('auth/deleteAccount', async() => {
   try{
     const token = localStorage.getItem('token');
-    const response = await axios.delete(`${api}/deleteuseraccount`, {
+    const response = await axios.delete(`/api/v1/user/deleteuseraccount`, {
       headers: {
         Authorization: `Bearer ${token}`
       },
@@ -108,7 +108,7 @@ export const deleteAccount = createAsyncThunk('auth/deleteAccount', async() => {
 export const getNumbers = createAsyncThunk('auth/getNumbers', async() => {
   try{
     const token = localStorage.getItem('token');
-    const response = await axios.get(`${api}/getnumbers`, {
+    const response = await axios.get(`/api/v1/user/getnumbers`, {
       headers: {
         Authorization: `Bearer ${token}`
       },
@@ -122,7 +122,7 @@ export const getNumbers = createAsyncThunk('auth/getNumbers', async() => {
 export const changeNumbers = createAsyncThunk('auth/changeNumbers', async(changedNumbers) =>{
   try{
     const token = localStorage.getItem('token');
-    const response = await axios.post(`${api}/changenumbers`, changedNumbers,  {
+    const response = await axios.post(`/api/v1/user/changenumbers`, changedNumbers,  {
       headers: {
         Authorization: `Bearer ${token}`
       },
@@ -136,7 +136,7 @@ export const changeNumbers = createAsyncThunk('auth/changeNumbers', async(change
 export const getAllUsers = createAsyncThunk('auth/getAllUsers', async()=> {
    try{
      const token = localStorage.getItem('token');
-     const response = await axios.get(`${api}/getallusers`,  {
+     const response = await axios.get(`/api/v1/user/getallusers`,  {
       headers: {
         Authorization: `Bearer ${token}`
       },
@@ -150,7 +150,7 @@ export const getAllUsers = createAsyncThunk('auth/getAllUsers', async()=> {
 export const deleteSpecificUser = createAsyncThunk('auth/deleteSpecificUser', async(id)=>{
   try{
     const token = localStorage.getItem('token');
-    const response = await axios.delete(`${api}/deletespecificuser/${id}`,  {
+    const response = await axios.delete(`/api/v1/user/deletespecificuser/${id}`,  {
      headers: {
        Authorization: `Bearer ${token}`
      },
@@ -164,7 +164,7 @@ export const deleteSpecificUser = createAsyncThunk('auth/deleteSpecificUser', as
 export const addRemoveAdmin = createAsyncThunk('auth/addRemoveAdmin', async(id)=>{
   try{
     const token = localStorage.getItem('token');
-    const response = await axios.post(`${api}/addremoveadmin/${id}`, null,{
+    const response = await axios.post(`/api/v1/user/addremoveadmin/${id}`, null,{
      headers: {
        Authorization: `Bearer ${token}`
      },
