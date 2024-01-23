@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { toast } from "react-hot-toast";
 
-const api = "http://localhost:8082/api/v1/user"
+const api = "https://wafflaro-server.vercel.app/api/v1/user"
 
 export const loginUser = createAsyncThunk('auth/loginUser', async (userData) => {
   try {
