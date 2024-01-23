@@ -14,21 +14,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-app.use(cors());
-
-app.get("/", (req, res) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Credentials", "true");
-  res.setHeader("Access-Control-Max-Age", "1800");
-  res.setHeader("Access-Control-Allow-Headers", "content-type");
-  res.setHeader("Access-Control-Allow-Methods", "PUT, POST, GET, DELETE, PATCH, OPTIONS");
-});
-// Use cors middleware before defining routes
-// app.use(cors({
-//   origin: "https://wafflaro-frontend.vercel.app",
-//   methods: ["POST", "GET", "DELETE"],
-//   credentials: true
-// }));
+Use cors middleware before defining routes
+app.use(cors({
+  origin: "https://wafflaro-frontend.vercel.app/",
+  methods: ["POST", "GET", "DELETE"],
+  credentials: true
+}));
 
 // Set headers in response to handle CORS
 // app.use((req, res, next) => {
