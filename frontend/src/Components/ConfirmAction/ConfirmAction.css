@@ -1,0 +1,70 @@
+.confirmDelete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vw;
+    width: 30vw;
+}
+
+#alertCD{
+    color: rgb(161, 0, 0);
+    font-size: 5vw;
+    margin-bottom: 1vw;
+}
+
+#btnCD{
+    width: 80%;
+    font-size: 1vw;
+    background-color: rgb(161, 0, 0);
+}
+
+  @media only screen and (max-width: 1188px) {
+
+    .confirmDelete{
+        height: 20vw;
+        width: 40vw;
+    }
+    
+    #alertCD{
+        font-size: 7vw;
+    }
+    
+    #btnCD{
+        width: 80%;
+        font-size: 1.3vw;
+    }
+  }
+    
+  @media only screen and (max-width: 745px) {
+    .confirmDelete{
+        height: 25vw;
+        width: 45vw;
+    }
+    
+    #alertCD{
+        font-size: 9vw;
+    }
+    
+    #btnCD{
+        width: 80%;
+        font-size: 1.8vw;
+    }
+  }
+  
+  @media only screen and (max-width: 543px) {
+    .confirmDelete{
+        height: 35vw;
+        width: 70vw;
+    }
+    
+    #alertCD{
+        font-size: 12vw;
+        margin-bottom: 3vw;
+    }
+    
+    #btnCD{
+        width: 80%;
+        font-size: 2.7vw;
+    }
+  }

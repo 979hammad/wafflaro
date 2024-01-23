@@ -1,0 +1,76 @@
+.deleteAccount{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.deleteAccount p{
+    font-size: 1vw;
+    text-align: center;
+}
+
+#deleteAccountBtn{
+    background-color: rgb(164, 0, 0);
+    font-size: 1vw;
+}
+
+  @media only screen and (max-width: 1188px) {
+    .deleteAccount{
+        width: 40vw;
+    }
+    
+    .deleteAccount p{
+        font-size: 1.9vw;
+        text-align: justify;
+    }
+    
+    #deleteAccountBtn{
+        font-size: 1.5vw;
+    }
+  }
+  
+  @media only screen and (max-width: 995px) {
+    .deleteAccount{
+        width: 50vw;
+    }
+    
+    .deleteAccount p{
+        font-size: 2.4vw;
+    }
+    
+    #deleteAccountBtn{
+        font-size: 2vw;
+    }
+  }
+    
+  @media only screen and (max-width: 745px) {
+    .deleteAccount{
+        width: 50vw;
+    }
+    
+    .deleteAccount p{
+        font-size: 2.4vw;
+    }
+    
+    #deleteAccountBtn{
+        font-size: 2vw;
+    }
+  }
+  
+  @media only screen and (max-width: 543px) {
+    .deleteAccount{
+        width: 70vw;
+    }
+    
+    .deleteAccount p{
+        text-align: center;
+        font-size: 3.2vw;
+        margin-bottom: 3vw;
+    }
+    
+    #deleteAccountBtn{
+        font-size: 3vw;
+    }
+  }

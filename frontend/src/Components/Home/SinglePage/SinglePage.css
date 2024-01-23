@@ -1,0 +1,185 @@
+#SPtoolbar{
+    background-color: #fec718;
+    color: rgb(67, 36, 1);
+}
+
+#SPclose{
+    background-color: rgb(67, 36, 1);
+    color: white;
+    margin-right: 2vw;
+
+}
+
+.SPheading{
+    font-size: 1.7vw;
+    font-weight: 700;
+}
+
+.SinglePageBody{
+    height: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SinglePageBody img{
+    width: 30vw;
+}
+
+.SPbodyRt{
+    width: 34vw;
+    padding: 4vw;
+}
+
+.SPbodyRtH{
+    font-size: 1.3vw;
+    font-weight: 700;
+}
+
+#SPbodyRtBtnCall{
+    width: 100%;
+    background-color: rgb(67, 36, 1);
+}
+
+#SPbodyRtBtnEdit{
+    color: rgb(127, 0, 0);
+    width: 50%;
+    background-color: rgb(224, 224, 224);
+}
+
+@media only screen and (max-width: 1188px) {  
+    
+    .SPheading{
+        font-size: 2.5vw;
+    }
+    
+    .SinglePageBody img{
+        width: 43vw;
+    }
+    
+    .SPbodyRt{
+        width: 38vw;
+        padding: 4vw;
+    }
+    
+    .SPbodyRtH{
+        font-size: 2vw;
+    }
+
+  }
+  
+  @media only screen and (max-width: 995px) {    
+    .SPheading{
+        font-size: 3vw;
+    }
+    
+    .SinglePageBody{
+        height: 55vw;
+    }
+    
+    .SinglePageBody img{
+        width: 50vw;
+    }
+    
+    .SPbodyRt{
+        width: 38vw;
+        padding: 4vw;
+    }
+    
+    .SPbodyRtH{
+        font-size: 2vw;
+    }
+    
+    .SPbodyRTBody{
+        font-size: 2vw;
+    }
+  }
+    
+  @media only screen and (max-width: 745px) {
+    .SPheading{
+        font-size: 3.5vw;
+    }
+    
+    .SinglePageBody{
+        height: 55vw;
+    }
+    
+    .SinglePageBody img{
+        width: 45vw;
+    }
+    
+    .SPbodyRt{
+        width: 38vw;
+        padding: 4vw;
+    }
+    
+    .SPbodyRtH{
+        font-size: 2vw;
+    }
+    
+    .SPbodyRTBody{
+        font-size: 1.8vw;
+    }
+
+    #SPbodyRtBtnCall{
+        font-size: 1.4vw;
+        width: 100%;
+    }
+
+    #SPbodyRtBtnEditIco{
+        font-size: 3vw;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 543px) {
+    .SPclose{
+        font-size: 0.5vw;
+        background-color: rgb(92, 92, 92);
+        color: white;
+    }
+
+    .SPheading{
+        font-size: 5vw;
+    }
+
+    .SinglePageBody{
+        background-color: #fff5d6;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .SinglePageBody img{
+        width: 70vw;
+        border-radius: 2vw;
+    }
+    
+    .SPbodyRt{
+        width: 79vw;
+        padding: 4vw;
+    }
+    
+    .SPbodyRtH{
+        font-size: 3vw;
+    }
+    
+    .SPbodyRTBody{
+        font-size: 2.3vw;
+        text-align: justify;
+    }
+
+    #SPbodyRtBtnCall{
+        font-size: 2vw;
+        margin-top: 5vw;
+        height: 8vw;
+        width: 100%;
+    }
+
+    #SPbodyRtBtnEditIco{
+        font-size: 5vw;
+    }
+
+  }

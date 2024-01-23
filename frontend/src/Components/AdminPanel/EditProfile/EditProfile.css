@@ -1,0 +1,66 @@
+.editProfile, .editPassword{
+    height: fit-content;
+    width: 70vw;
+}
+
+.editProfile h3, .editPassword h3{
+    font-size: 2.2vw;
+}
+
+.personalInfoBody{
+    display: flex;
+    flex-direction: column;
+    padding-right: 30vw;
+}
+
+.personalInfoBody .input{
+    padding: 0.5vw ;
+}
+
+#personalInfoBtn{
+    margin-top: 2vw;
+    width: 30%;
+    font-size: 1vw;
+    background-color: rgb(67, 36, 1);
+}
+  
+  @media only screen and (max-width: 995px) {
+    .editProfile, .editPassword{
+        height: fit-content;
+        width: 93vw;
+        padding: 2vw;
+    }
+    
+    .editProfile h3, .editPassword h3{
+        font-size: 2.2vw;
+    }
+    
+    #personalInfoBtn{
+        margin-top: 3vw;
+        width: 50%;
+        font-size: 2vw;
+    }
+  }
+    
+  @media only screen and (max-width: 745px) {
+    .editProfile, .editPassword{
+        position: relative;
+        bottom: 6vw;
+    }
+  }
+  
+  @media only screen and (max-width: 543px) {
+    .editProfile, .editPassword{
+        position: fixed;
+        top: 29vw;
+    }
+
+    .editProfile h3, .editPassword h3{
+        font-size: 4vw;
+    }
+
+    #personalInfoBtn{
+        width: 65%;
+        font-size: 2.5vw;
+    }
+  }

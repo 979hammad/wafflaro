@@ -1,0 +1,69 @@
+.addHeaderImg{
+   margin-top: -8vw;
+   width: 70vw;
+}
+
+#headerImgBtn{
+    background-color: rgb(67, 36, 1);
+    font-size: 0.9vw;
+}
+
+.uploadHeaderInput{
+    font-size: 1vw;
+}
+  
+  @media only screen and (max-width: 995px) {
+    .addHeaderImg{
+        margin-top: -15vw;
+        width: 90vw;
+     }
+     
+     #headerImgBtn{
+        font-size: 2.1vw;
+     }
+
+     #headerImgUploadIco{
+        font-size: 3vw;
+     }
+     
+     .uploadHeaderInput{
+        font-size: 2vw;
+     }
+  }
+    
+  @media only screen and (max-width: 745px) {
+    .addHeaderImg{
+        margin-top: -25vw;
+        width: 90vw;
+     }
+     
+     #headerImgBtn{
+        font-size: 2.8vw;
+     }
+
+     #headerImgUploadIco{
+        font-size: 3.8vw;
+     }
+     
+     .uploadHeaderInput{
+        font-size: 2.5vw;
+     }
+  }
+  
+  @media only screen and (max-width: 543px) {
+    .addHeaderImg{
+        margin-top: -45vw;
+     }
+     
+     #headerImgBtn{
+        font-size: 3vw;
+     }
+
+     #headerImgUploadIco{
+        font-size: 4vw;
+     }
+     
+     .uploadHeaderInput{
+        font-size: 3vw;
+     }
+  }

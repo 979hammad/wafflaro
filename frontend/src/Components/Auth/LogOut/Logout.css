@@ -1,0 +1,107 @@
+.logout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vw ;
+    width: 30vw;
+}
+
+p{
+    margin: 1vw 0 1vw 0;
+    font-size: 1.1vw;
+}
+
+#logoutIcon{
+    font-size: 3vw;
+}
+
+#logoutBtn{
+    background-color: rgb(183, 3, 3);
+    width: 56%;
+}
+
+  @media only screen and (max-width: 1188px) {
+    .logout{
+        height: 20vw ;
+        width: 38vw;
+    }
+    
+    p{
+        margin: 1vw 0 1vw 0;
+        font-size: 2vw;
+    }
+    
+    #logoutIcon{
+        font-size: 3.5vw;
+    }
+    
+    #logoutBtn{
+        font-size: 1.8vw;
+        width: 56%;
+    }
+  }
+  
+  @media only screen and (max-width: 995px) {
+    .logout{
+        height: 25vw ;
+        width: 45vw;
+    }
+    
+    p{
+        margin: 1vw 0 1vw 0;
+        font-size: 2.5vw;
+    }
+    
+    #logoutIcon{
+        font-size: 3.8vw;
+    }
+    
+    #logoutBtn{
+        font-size: 2vw;
+        width: 56%;
+    }
+  }
+    
+  @media only screen and (max-width: 745px) {
+    .logout{
+        height: 28vw ;
+        width: 58vw;
+    }
+    
+    p{
+        margin: 1vw 0 1vw 0;
+        font-size: 2.9vw;
+    }
+    
+    #logoutIcon{
+        font-size: 4vw;
+    }
+    
+    #logoutBtn{
+        font-size: 2.8vw;
+        width: 59%;
+    }
+     
+  }
+  
+  @media only screen and (max-width: 543px) {
+    .logout{
+        height: 32vw ;
+        width: 67vw;
+    }
+    
+    p{
+        margin: 1vw 0 1vw 0;
+        font-size: 3.1vw;
+    }
+    
+    #logoutIcon{
+        font-size: 5vw;
+    }
+    
+    #logoutBtn{
+        font-size: 3vw;
+        width: 60%;
+    }
+  }

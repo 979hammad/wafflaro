@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#NavSeachIcon{
+    color: #442700;
+    font-size: 2vw;
+}
+
+.navLink1{
+    color: black;
+    text-decoration: none;
+}
+
+.navRightSide{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    width: 180px;
+}
+
+#accountIcon{
+    font-size: 3vw;
+    color: #442700;
+    
+    /* background-color: rgb(60, 60, 60);
+    border-radius: 100%; */
+}
+
+#search{
+    color: #442700;
+    padding-left: 1vw;
+    border-radius: 0 5px 5px 0;
+    height: 0.5vw;
+}
+
+
+.nav{
+    background-color: #fec718;
+    height: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding : 0 8vw 0 5vw;
+}
+
+#logo{
+    width: 15vw;
+    cursor: pointer;
+}
+
+#fade-button{
+    background-color: #442700;
+    width: 10vw;
+    color: white;
+    font-size: 1vw;
+}
+
+.scrollableNav{
+    padding : 0 7vw 0 2.5vw;
+    background-color: white;
+}
+
+.nav2Tabs{
+    font-size: 1.2vw;
+    padding: 1.2vw 2vw;
+    text-decoration: none;
+    color: black;
+}
+
+#tab{
+    padding: 0;
+}
+
+.isActiveScroll{
+    background-color: #fec718 !important;
+}
+
+@media only screen and (max-width: 1188px) {
+    #tab a{
+        padding: 1.5vw;
+    }
+  }
+  
+  @media only screen and (max-width: 995px) {
+    #NavSeachIcon{
+        font-size: 2vw;
+    }
+    
+    .navRightSide{
+        width: 150px;
+    }
+    
+    #accountIcon{
+        font-size: 4.5vw;
+    }
+    
+    #search{
+        height: 0.8vw;
+    }
+    
+    .nav{
+        height: 9vw;
+    }
+    
+    #logo{
+        width: 18vw;
+    }
+    
+    #fade-button{
+        width: 12vw;
+        height: 4vw;
+        font-size: 1.2vw;
+    }
+    
+    .scrollableNav{
+        padding : 0 7vw 0 2.5vw;
+    }
+    
+    .nav2Tabs{
+        font-size: 1.8vw;
+    
+    }
+
+    #tab a{
+        padding: 1.3vw;
+    }
+  }
+    
+  @media only screen and (max-width: 745px) {
+    #NavSeachIcon{
+        font-size: 3.5vw;
+    }
+    
+    .navRightSide{
+        width: 100px;
+    }
+    
+    #search{
+        height: 0.5vw;
+    }
+    
+    .nav{
+        height: 13vw;
+    }
+    
+    #logo{
+        width: 20vw;
+    }
+    
+    #fade-button{
+        width: 13vw;
+        height: 5vw;
+        font-size: 1.2vw;
+    }
+    
+    .scrollableNav{
+        padding : 0 7vw 0 2.5vw;
+    }
+    
+    .nav2Tabs{
+        font-size: 2.5vw;
+    
+    }
+
+    #tab a{
+        padding: 2.6vw;
+    }
+  }
+  
+  @media only screen and (max-width: 543px) {
+    #NavSeachIcon{
+        font-size: 5vw;
+    }
+    
+    .navRightSide{
+        width: 100px;
+        flex-direction: row;
+    }
+    
+    #search{
+        height: 0.3vw;
+        padding-left: 0vw;
+    }
+    
+    .nav{
+        height: 16vw;
+    }
+    
+    #logo{
+        width: 26vw;
+    }
+
+    #search{
+        width: 18vw;
+    }
+    
+    #accountIcon{
+        font-size: 8vw;
+    }
+
+    #fade-button{
+        width: 16vw;
+        height: 6vw;
+        font-size: 1.3vw;
+    }
+    
+    .scrollableNav{
+        padding : 0 5vw 0 5.1vw;
+    }
+    
+    .nav2Tabs{
+        font-size: 3vw;
+    }
+
+    #tab a{
+        padding: 2.8vw;
+    }
+  }
+  
+  @media only screen and (max-width: 396px) {
+    #NavSeachIcon{
+        font-size: 5vw;
+    }
+    
+    .navRightSide{
+        width: 80px;
+        flex-direction: row;
+    }
+
+    #search{
+        height: 0vw;
+        width: 10vw;
+    }
+
+    #NavSeachIcon{
+        width: 6vw;
+    }
+
+    #tab a{
+        padding: 4.4vw !important;
+    }
+    
+  }
+  

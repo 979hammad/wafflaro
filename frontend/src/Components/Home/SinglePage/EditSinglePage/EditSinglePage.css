@@ -1,0 +1,136 @@
+  .editSinglePage{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    padding: 2vw;
+  }
+  
+  #addItemImgEditSingle{
+    padding-left: 4vw;
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  #itemName, #price, #description, #itemCategory{
+    font-size: 1vw;
+  }
+
+  #itemBtn{
+    width: 50%;
+  }
+
+  .btnDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 1188px) {
+    .editSinglePage{
+        width: 50vw;
+        overflow-y: scroll;
+        padding: 1vw;
+      }
+      
+      #addItemImgEditSingle{
+        padding-left: 4vw;
+        width: 500px;
+        height: 200px;
+        overflow: hidden;
+      }
+    
+      #itemName, #price, #description, #itemCategory{
+        font-size: 1.7vw;
+      }
+    
+      #itemBtn{
+        font-size: 1.5vw;
+        width: 50%;
+      }
+  }
+  
+  @media only screen and (max-width: 995px) {
+    .editSinglePage{
+        width: 50vw;
+        overflow-y: scroll;
+        padding: 1vw;
+      }
+      
+      #addItemImgEditSingle{
+        padding-left: 4vw;
+        width:100vw;
+      }
+    
+      #itemName, #price, #description, #itemCategory{
+        font-size: 1.7vw;
+      }
+    
+      #itemBtn{
+        font-size: 1.5vw;
+        width: 50%;
+      }
+  }
+    
+  @media only screen and (max-width: 745px) {
+    .editSinglePage{
+        width: 70vw;
+        overflow-y: scroll;
+        padding: 2vw;
+      }
+      
+      #addItemImgEditSingle{
+        padding-left: 4vw;
+        width:100vw;
+      }
+    
+      #itemName, #price, #description, #itemCategory{
+        width: 50vw;
+        font-size: 2.3vw;
+      }
+    
+      #itemBtn{
+        font-size: 2vw;
+      }
+  }
+  
+  @media only screen and (max-width: 543px) {
+    .editSinglePage{
+        width: 80vw;
+        padding: 2vw;
+      }
+      
+      #addItemImgEditSingle{
+        padding-left: 4vw;
+        width:100vw;
+      }
+    
+      #itemName, #price, #description, #itemCategory{
+        width: 58vw;
+        font-size: 2.8vw;
+      }
+    
+      #itemBtn{
+        font-size: 3vw;
+      }
+  }
+
+  @media only screen and (max-width: 393px) { 
+
+      #addItemImgEditSingle{
+        padding-left: 4vw;
+        width:80vw;
+      }
+    
+      #itemName, #price, #description, #itemCategory{
+        width: 75vw;
+        font-size: 2.8vw;
+      }
+    
+      #itemBtn{
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        font-size: 3vw;
+      }
+  }

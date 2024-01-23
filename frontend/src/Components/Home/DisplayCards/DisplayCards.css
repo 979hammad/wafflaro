@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+
+.wafflaro-special-h{
+  margin: 4vw 8.1vw 0 7vw;
+}
+
+.wafflaro-special-h hr{
+  margin-top: 8px;
+}
+
+.wafflaro-special{
+  margin: 4vw 5vw 5vw 7vw;
+}
+
+.diplayItems{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 24vw 24vw 24vw;
+  grid-column-gap: 5.3vw;
+  grid-row-gap: 1.5vw; 
+  width: 83vw;
+  margin-bottom: 5vw;
+}
+
+.mobileDataCard{
+  padding: 3px 2px 3px 2px;
+  width: 54vw;
+}
+
+
+.m_heading{
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  font-size: 3vw;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.m_description{
+  font-size: 2vw;
+  text-align: justify;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.m_price{
+  font-size: 3vw;
+  background-color: #fec718;
+  padding-left: 20px;
+  width: 100vw;
+  height: 7vw;
+  position: relative;
+  right: 0.4vw;
+  display: flex;
+  align-items: center;
+  top: 1.7vw;
+}
+
+.marginBottomCards{
+  margin-bottom: 2vw;
+}
+
+.hr{
+  width: 83vw;
+}
+
+.prices{
+  position: relative;
+  right: 1.2vw;
+  top: 2.3vw;
+  padding: 14px 18px 14px 18px;
+  width: 100vw;
+  font-family: 'Outfit', sans-serif;
+  background-color: #fec718;
+  font-size: 1.2vw;
+}
+
+.diplayItemsMobile{
+  display: none;
+}
+
+@media only screen and (max-width: 1188px) {
+  .diplayItems{
+    grid-template-columns: 27.7vw 27.7vw 27.7vw;
+    grid-column-gap: 0.5vw;
+    width: 84vw;
+    margin-bottom: 5vw;
+  }
+
+  .hr{
+    width: 84vw;
+  }
+
+  .prices{
+    right: 3.2vw;
+    top: 3.8vw;
+    padding: 11px 18px 26px 33px;
+    width: 100vw;
+    font-size: 2.2vw;
+  }
+
+}
+
+@media only screen and (max-width: 995px) {
+  .diplayItems{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 27.7vw 27.7vw 27.7vw;
+    grid-column-gap: 0.5vw;
+    width: 84vw;
+    margin-bottom: 5vw;
+  }
+
+  .hr{
+    width: 84vw;
+  }
+  
+  .prices{
+    right: 3.2vw;
+    top: 3.8vw;
+    padding: 7px 18px 14px 33px;
+    width: 100vw;
+    font-size: 2.6vw;
+  }
+}
+  
+@media only screen and (max-width: 745px) {
+  .diplayItems{
+    grid-template-columns: 41vw 41vw;
+    grid-column-gap: 2vw;
+    width: 84vw;
+    margin-bottom: 5vw;
+  }
+
+  .hr{
+    width: 84vw;
+  }
+
+  .prices{
+    right: 3.2vw;
+    top: 3.8vw;
+    padding: 14px 18px 14px 18px;
+    width: 100vw;
+    font-size: 2.6vw;
+  }
+   
+}
+
+@media only screen and (max-width: 543px) {
+  .diplayItems{
+   display: none;
+  }
+
+  .diplayItemsMobile{
+    display: block;
+    width: 86vw;
+  }
+
+  .hr{
+    width: 86vw;
+  } 
+}

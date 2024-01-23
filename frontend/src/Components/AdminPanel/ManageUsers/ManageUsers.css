@@ -1,0 +1,39 @@
+.manageUsers{
+  height: 30vw;
+  width: 70vw;
+  overflow: scroll;
+}
+  
+#deleteUserIco{
+  color: rgb(210, 0, 0);
+}
+
+#deleteUserIco:hover{
+  color: rgb(164, 0, 0);
+  cursor: pointer;
+}
+
+  @media only screen and (max-width: 995px) {
+    .manageUsers{
+        position: relative;
+        top: 18vw;
+        height: 80vw;
+        width: 90vw;
+    }
+  }
+    
+  @media only screen and (max-width: 745px) {
+    .manageUsers{
+        top: 17vw;
+        height: 100vw;
+        width: 92vw;
+    }
+  }
+  
+  @media only screen and (max-width: 543px) {
+    .manageUsers{
+        top: 30vw;
+        height: 160vw;
+        width: 92vw;
+    }
+  }

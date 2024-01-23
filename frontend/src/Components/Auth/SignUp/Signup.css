@@ -1,0 +1,163 @@
+.signUpForm{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 3vw;
+   width: 30vw;
+}
+
+.signUpHeading{
+    font-size: 2vw;
+    font-weight: 600;
+    margin-bottom: 1vw;
+}
+
+#signUpName, #signUpemail, #signUppNumber, #signUppassword, #signUpCpassword{
+    width: 20.5vw;
+}
+
+#signUpFormInputs{
+    color: red;
+}
+
+#signUpBtn{
+    margin-top: 1vw;
+    width: 24vw;
+    color: black;
+    background-color: #fec718;
+    border-radius: 20px;
+}
+
+.signIn{
+    position: relative;
+    top: -3vw;
+    text-align: center;
+}
+
+.signInClick{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+  @media only screen and (max-width: 1188px) {
+    .signUpForm{
+       padding: 3vw;
+       width: 40vw;
+     }
+     
+     .signUpHeading{
+        font-size: 3vw;
+     }
+     
+     #signUpName, #signUpemail, #signUppNumber, #signUppassword, #signUpCpassword{
+        font-size: 2vw;
+        
+     }
+
+    
+     
+     #signUpFormInputs{
+        font-size: 1.7vw;
+     }
+     
+     #signUpBtn{
+        font-size: 1.6vw;
+        margin-top: 1vw;
+        width: 34vw;
+     }
+     
+     .signIn{
+        font-size:1.8vw;
+     }
+  }
+  
+  @media only screen and (max-width: 995px) {
+    .signUpForm{
+        padding: 3vw;
+        width: 60vw;
+      }
+      
+      .signUpHeading{
+         font-size: 5vw;
+      }
+      
+      #signUpName, #signUpemail, #signUppNumber, #signUppassword, #signUpCpassword{
+         font-size: 3vw;
+         width: 49vw;
+      }
+      
+      #signUpFormInputs{
+         font-size: 2vw;
+      }
+      
+      #signUpBtn{
+         font-size: 2vw;
+         margin-top: 1vw;
+         width: 54vw;
+      }
+      
+      .signIn{
+         font-size: 2vw;
+      }
+  }
+    
+  @media only screen and (max-width: 745px) {
+    .signUpForm{
+        padding: 3vw;
+        width: 80vw;
+      }
+      
+      .signUpHeading{
+         font-size: 7vw;
+      }
+      
+      #signUpName, #signUpemail, #signUppNumber, #signUppassword, #signUpCpassword{
+         font-size: 4vw;
+         width: 67vw;
+      }
+      
+      #signUpFormInputs{
+         font-size: 3vw;
+      }
+      
+      #signUpBtn{
+         font-size: 2.5vw;
+         margin-top: 1vw;
+         width: 75vw;
+      }
+      
+      .signIn{
+         font-size: 4vw;
+      }
+  }
+  
+  @media only screen and (max-width: 543px) {
+    .signUpForm{
+        padding: 3vw;
+        width: 80vw;
+      }
+      
+      .signUpHeading{
+         font-size: 7vw;
+      }
+      
+      #signUpName, #signUpemail, #signUppNumber, #signUppassword, #signUpCpassword{
+         font-size: 4vw;
+         width: 67vw;
+      }
+      
+      #signUpFormInputs{
+         font-size: 3vw;
+      }
+      
+      #signUpBtn{
+         font-size: 2.5vw;
+         margin-top: 1vw;
+         width: 75vw;
+      }
+      
+      .signIn{
+         font-size: 4vw;
+      }
+  }
