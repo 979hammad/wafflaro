@@ -14,14 +14,14 @@ app.use(cookieParser());
 
 // Use cors middleware before defining routes
 app.use(cors({
-  origin: 'https://wafflaro-frontend.vercel.app',
+  origin: 'https://wafflaro-frontend.vercel.app/',
   methods: ["POST", "GET", "DELETE"],
   credentials: true
 }));
 
 // Set headers in response to handle CORS
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://wafflaro-frontend.vercel.app');
+  res.setHeader('Access-Control-Allow-Origin', 'https://wafflaro-frontend.vercel.app/');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PATCH, DELETE');
   res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
   res.setHeader('Access-Control-Allow-Credentials', 'true');
