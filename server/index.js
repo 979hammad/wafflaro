@@ -16,7 +16,7 @@ app.use(cookieParser());
 
 // Use cors middleware before defining routes
 app.use(cors({
-  origin: 'https://wafflaro-frontend.vercel.app',
+  origin: "https://wafflaro-frontend.vercel.app",
   methods: ["POST", "GET", "DELETE"],
   credentials: true
 }));
