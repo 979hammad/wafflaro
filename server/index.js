@@ -4,6 +4,7 @@ import { dbConnection } from "./Database/Connection.js";
 import cookieParser from 'cookie-parser';
 import userRoutes from "./Routes/userRoutes.js";
 import itemRoutes from "./Routes/itemRoutes.js";
+const PORT = 8082 || "https://wafflaro-server.vercel.app/"
 import cors from "cors";
 
 const app = express();
@@ -36,7 +37,7 @@ app.use((err, req, res, next) => {
   return res.status(status).json({ message: message });
 });
 
-app.listen(process.env.PORT, () => {
+app.listen(PORT, () => {
   dbConnection();
   console.log("Backend Connected!");
 });
