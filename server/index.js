@@ -21,7 +21,7 @@ app.use(cors(
 ))
 
 app.get("/", (req, res)=>{
-    res.send("hi")
+    res.json("hi")
 })
 
 // app.use((req, res, next) => {
