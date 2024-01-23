@@ -14,15 +14,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-const corsOptions = {
-   origin: 'https://wafflaro-frontend.vercel.app/',
-   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-   credentials: true,
-   optionsSuccessStatus: 204,
-};
+app.use(cors());
 
-app.use(cors(corsOptions));
-
+app.get("/", (req, res) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Credentials", "true");
+  res.setHeader("Access-Control-Max-Age", "1800");
+  res.setHeader("Access-Control-Allow-Headers", "content-type");
+  res.setHeader("Access-Control-Allow-Methods", "PUT, POST, GET, DELETE, PATCH, OPTIONS");
+});
 // Use cors middleware before defining routes
 // app.use(cors({
 //   origin: "https://wafflaro-frontend.vercel.app",
