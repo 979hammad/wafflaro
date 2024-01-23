@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server : {
     '/api' : 'https://wafflaro-server.vercel.app'
-  }
+  },
   plugins: [react()],
 })
