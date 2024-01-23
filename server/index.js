@@ -14,24 +14,33 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
+const corsOptions = {
+   origin: 'https://wafflaro-frontend.vercel.app/',
+   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+   credentials: true,
+   optionsSuccessStatus: 204,
+};
+
+app.use(cors(corsOptions));
+
 // Use cors middleware before defining routes
-app.use(cors({
-  origin: "https://wafflaro-frontend.vercel.app",
-  methods: ["POST", "GET", "DELETE"],
-  credentials: true
-}));
+// app.use(cors({
+//   origin: "https://wafflaro-frontend.vercel.app",
+//   methods: ["POST", "GET", "DELETE"],
+//   credentials: true
+// }));
 
 // Set headers in response to handle CORS
-app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader(
-    'Access-Control-Allow-Headers',
-    'Origin, X-Requested-With, Content-Type, Accept, Authorization'
-  );
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PATCH, DELETE');
+// app.use((req, res, next) => {
+//   res.setHeader('Access-Control-Allow-Origin', '*');
+//   res.setHeader(
+//     'Access-Control-Allow-Headers',
+//     'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+//   );
+//   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PATCH, DELETE');
 
-  next();
-});
+//   next();
+// });
 
 app.use("/api/v1/user", userRoutes);
 app.use("/api/v1/items", itemRoutes);
