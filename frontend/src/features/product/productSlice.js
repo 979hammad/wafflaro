@@ -2,11 +2,11 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { toast } from "react-hot-toast";
 
-const api = "https://wafflaro-server.vercel.app/api/v1/items";
+// const api = "https://wafflaro-server.vercel.app/api/v1/items";
 
 export const getAllProducts = createAsyncThunk("product/getAllProducts", async (searchItem) => {
     try {
-      const response = await axios.get(`${api}/searchitem`, {
+      const response = await axios.get(`/api/v1/items/searchitem`, {
         params: {
           searchItem: searchItem,
         },
@@ -21,7 +21,7 @@ export const getAllProducts = createAsyncThunk("product/getAllProducts", async (
 export const addItem = createAsyncThunk('product/addItem', async (data)=> {
     try{
       const token = localStorage.getItem('token');
-      const response = await axios.post(`${api}/addnew`, data ,  {
+      const response = await axios.post(`/api/v1/items/addnew`, data ,  {
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -35,7 +35,7 @@ export const addItem = createAsyncThunk('product/addItem', async (data)=> {
 export const singleItem = createAsyncThunk('product/singleItem', async(id)=>{
   try{
     const token = localStorage.getItem('token');
-    const response = await axios.get(`${api}/getsingleitem/${id}`)
+    const response = await axios.get(`/api/v1/items/getsingleitem/${id}`)
     return response.data
   }catch(error){
     throw error
@@ -47,7 +47,7 @@ export const updateitem = createAsyncThunk('product/updateitem', async(payload)=
     const { id, data } = payload;
     console.log(id, data)
     const token = localStorage.getItem('token');
-    const response = await axios.post(`${api}/updateitem/${id}`, data, {
+    const response = await axios.post(`/api/v1/items/updateitem/${id}`, data, {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -62,7 +62,7 @@ export const headerImage = createAsyncThunk('product/headerImage', async(payload
   try{
     const { id, data } = payload;
     const token = localStorage.getItem('token');
-    const response = await axios.post(`${api}/addheaderimg/${id}`,data ,{
+    const response = await axios.post(`/api/v1/items/addheaderimg/${id}`,data ,{
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -75,7 +75,7 @@ export const headerImage = createAsyncThunk('product/headerImage', async(payload
 
 export const getHeaderImage = createAsyncThunk('product/getHeaderImage', async()=>{
   try{
-    const response = await axios.get(`${api}/getheaderimg`)
+    const response = await axios.get(`/api/v1/items/getheaderimg`)
     return response.data
   }catch(error){
     throw error
@@ -85,7 +85,7 @@ export const getHeaderImage = createAsyncThunk('product/getHeaderImage', async()
 export const deleteProduct = createAsyncThunk('product/deleteProduct', async(id)=>{
     try{
       const token = localStorage.getItem('token');
-      const response = await axios.delete(`${api}/deleteitem/${id}`, {
+      const response = await axios.delete(`/api/v1/items/deleteitem/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`
         }
