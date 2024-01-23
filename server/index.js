@@ -4,7 +4,7 @@ import { dbConnection } from "./Database/Connection.js";
 import cookieParser from 'cookie-parser';
 import userRoutes from "./Routes/userRoutes.js";
 import itemRoutes from "./Routes/itemRoutes.js";
- // import cors from "cors";
+ import cors from "cors";
 
 const PORT = process.env.PORT || 8082;
 
@@ -15,11 +15,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 //Use cors middleware before defining routes
-// app.use(cors({
-//   origin: "https://wafflaro-frontend.vercel.app/",
-//   methods: ["POST", "GET", "DELETE"],
-//   credentials: true
-// }));
+app.use(cors({
+  origin: "https://wafflaro-frontend.vercel.app/"
+}));
 
 // Set headers in response to handle CORS
 // app.use((req, res, next) => {
