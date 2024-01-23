@@ -5,6 +5,7 @@ import cookieParser from 'cookie-parser';
 import userRoutes from "./Routes/userRoutes.js";
 import itemRoutes from "./Routes/itemRoutes.js";
 import cors from "cors"
+const PORT = 5080 || process.env.PORT
 const app = express();
 
 app.use(express.json());
@@ -18,6 +19,10 @@ app.use(cors(
         credentials : true
     }
 ))
+
+app.get("/", (req, res)=>{
+    res.send("hi")
+})
 
 // app.use((req, res, next) => {
 //     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -38,7 +43,7 @@ app.use((err, req, res, next) =>{
     return res.status(status).json({message : message});
 })
 
-app.listen(process.env.PORT , ()=>{
+app.listen(PORT , ()=>{
     dbConnection();
     console.log("Backend Connected!");
 });
