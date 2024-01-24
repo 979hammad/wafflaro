@@ -5,7 +5,7 @@ import cookieParser from 'cookie-parser';
 import userRoutes from "./Routes/userRoutes.js";
 import itemRoutes from "./Routes/itemRoutes.js";
 import cors from "cors"
-const PORT = 8082 || process.env.PORT
+const PORT = process.env.PORT || 8082;
 const app = express();
 
 app.use(express.json());
