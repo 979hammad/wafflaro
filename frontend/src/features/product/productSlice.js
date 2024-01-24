@@ -6,7 +6,7 @@ import { toast } from "react-hot-toast";
 
 export const getAllProducts = createAsyncThunk("product/getAllProducts", async (searchItem) => {
     try {
-      const response = await axios.get(`https://wafflaro.vercel.app/api/v1/items/searchitem`, {
+      const response = await axios.get(`/api/v1/items/searchitem`, {
         params: {
           searchItem: searchItem,
         },
