@@ -6,7 +6,7 @@ import { toast } from "react-hot-toast";
 
 export const getAllProducts = createAsyncThunk("product/getAllProducts", async (searchItem) => {
     try {
-      const response = await axios.get(`/api/v1/items/searchitem`, {
+      const response = await axios.get(`http://localhost:8082//api/v1/items/searchitem`, {
         params: {
           searchItem: searchItem,
         },
