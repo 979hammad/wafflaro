@@ -14,7 +14,7 @@ app.use(cookieParser());
 
 app.use(cors(
     {
-        origin : ['https://wafflaro-frontend.vercel.app'],
+        origin : ['https://wafflaro-frontend-jb9lqkkza-979hammads-projects.vercel.app/'],
         methods : ["POST", "GET", "DELETE"],
         credentials : true
     }
